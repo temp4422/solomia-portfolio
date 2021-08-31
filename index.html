@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solomia Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </link>
+</head>
+
+
+<body>
+  <div class="content">
+
+    <header class="header">
+      <button class="nav__button button"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg></button>
+    </header>
+
+    <div class="header__dim"></div>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__menu__item"><a class=" nav__menu__link link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+              height="24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg></a></li>
+        <li class="nav__menu__item"><a class=" nav__menu__link link" href="#section-0">Hello!</a></li>
+        <li class="nav__menu__item"><a class=" nav__menu__link link" href="#section-1">Хто я?</a></li>
+        <li class="nav__menu__item"><a class=" nav__menu__link link" href="#section-2">Що можу?</a></li>
+        <li class="nav__menu__item"><a class=" nav__menu__link link" href="#section-3">Для чого?</a></li>
+        <li class="nav__menu__item"><a class=" nav__menu__link link" href="#section-4">Контакти...</a></li>
+      </ul>
+    </nav>
+
+
+    <main class="main">
+      <section class="section section-0" id="section-0">
+        <svg class="svg svg-hello" width="262.569" height="120.81" xmlns="http://www.w3.org/2000/svg"
+          viewBox="118.716 14.595 262.569 120.81" style="background:0 0" preserveAspectRatio="xMidYMid">
+          <defs>
+            <filter id="editing-extrude-glow">
+              <feFlood flood-color="#333" result="flood-1" />
+              <feMorphology radius="1" in="SourceAlpha" result="erode" />
+              <feComposite operator="in" in="flood-1" in2="erode" result="comp1" />
+              <feConvolveMatrix order="3,3" divisor="1" in="comp1" result="convolve" kernelMatrix="0 0 0 1 1 1 0 0 0" />
+              <feOffset dx="-3" in="convolve" result="extrude" />
+              <feComposite operator="in" in="flood-1" in2="extrude" result="comp-extrude" />
+              <feFlood flood-color="#000" result="flood-2" />
+              <feComposite operator="in" in="flood-2" in2="SourceAlpha" result="comp2" />
+              <feMorphology operator="dilate" radius="1" in="comp2" result="dilate" />
+              <feOffset dx="-4.5" in="dilate" result="offset" />
+              <feGaussianBlur in="offset" stdDeviation="5.8" result="blur" />
+              <feComponentTransfer in="blur" result="shadow">
+                <feFuncA type="linear" slope=".8" intercept="-.2" />
+              </feComponentTransfer>
+              <feMerge>
+                <feMergeNode in="shadow" />
+                <feMergeNode in="comp-extrude" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <g filter="url(#editing-extrude-glow)">
+            <path
+              d="M186.637 93.91q0-4.48 1.79-13.44h-9.47l-3.52 18.24h-13.38l8.13-42.24h13.51l-3.72 18.88h9.48l3.52-18.88h13.5q-.9 4.74-2.05 10.05l-2.17 10.43q-2.44 12.16-2.44 17.47 0 2.18.71 3.39-3.2 2.18-6.95 2.18-3.74 0-5.34-1.79-1.6-1.79-1.6-4.29zm47.3-6.02q1.6 1.09 1.6 3.49 0 2.4-1.22 3.94-1.22 1.53-3.2 2.56-4.1 2.11-8.51 2.11-4.42 0-7.01-.96t-4.32-2.75q-3.39-3.39-3.39-9.6 0-9.67 5.25-15.55 5.63-6.34 15.42-6.34 6.08 0 9.09 2.56 2.24 1.92 2.24 5.06 0 11.26-19.46 11.26-.25 1.66-.25 3.07 0 2.95 1.31 4.07t3.74 1.12q2.43 0 5.03-1.12 2.59-1.12 3.68-2.92zm-13.06-6.97q4.54 0 7.17-2.82 2.62-2.69 2.62-6.97 0-1.48-.54-2.28-.55-.8-1.63-.8-1.09 0-2.02.42-.93.42-1.89 1.82-2.37 3.2-3.71 10.63zm36.48 14.27q-1.98 4.8-8.32 4.8-3.2 0-5.25-2.24-1.66-1.86-1.66-3.97 0-4.8 2.24-15.29l4.67-24.58 12.99-1.28-6.21 32.38q-1.08 4.74-1.08 6.4 0 3.65 2.62 3.78zm20.74 0q-1.99 4.8-8.32 4.8-3.2 0-5.25-2.24-1.67-1.86-1.67-3.97 0-4.8 2.24-15.29l4.68-24.58 12.99-1.28-6.21 32.38q-1.09 4.74-1.09 6.4 0 3.65 2.63 3.78zm19.39 4.8q-14.08 0-14.08-13.25 0-9.41 5.18-15.49 5.51-6.46 15.04-6.46 6.91 0 10.43 3.2 3.52 3.2 3.52 9.92 0 10.24-5.5 16.19-5.38 5.89-14.59 5.89zm1.66-27.84q-.77 1.73-1.37 4.32-.61 2.59-1.38 6.69-.77 4.09-.77 9.15 0 1.66.55 2.75.54 1.09 2.01 1.09 1.47 0 2.4-.7.93-.71 1.63-2.37 1.28-2.95 2.31-8.42 1.02-5.47 1.12-7.84.09-2.37.09-4.13 0-1.76-.51-2.91-.51-1.15-1.95-1.15t-2.4.9q-.96.89-1.73 2.62zm20.48 22.78q0-2.43 1.83-3.74 1.82-1.31 4.51-1.31 2.69 0 4.38 1.31 1.7 1.31 1.7 3.74 0 2.44-1.89 3.78-1.89 1.34-4.58 1.34-2.68 0-4.32-1.34-1.63-1.34-1.63-3.78zm3.46-12.03q0-.45.13-1.09l4.99-25.72q2.37-.9 5.18-.9 2.82 0 4.29 1.79 1.47 1.79 1.47 4.45t-1.02 5.63q-1.03 2.98-2.27 5.99-1.25 3-2.31 6.11-1.05 3.1-1.12 6.37-1.47 1.66-4.03 1.66-2.56 0-3.94-1.18-1.37-1.19-1.37-3.11z"
+              fill="#ffbe76" />
+          </g>
+        </svg>
+        <img class="image image-section-0" src="img/solo-2.jpg" alt="My image" width="768" height="960">
+      </section>
+
+
+      <section class="section section-1" id="section-1">
+        <h1 class="heading-h1 ">Хто я?</h1>
+        <div class="container">
+          <img class="image image-section-1 js-scroll fade-in-bottom" src="img/solo-0.jpg" alt="My image" width="505"
+            height="498">
+          <div class="image-text js-scroll slide-left">
+            <h2 class="heading-h2">Соломія Лобачук</h2>
+            <p class="text">
+              <br>
+              25 років, Київ<br>
+              Журналіст/Сценарист<br><br>
+
+              Досівд роботи в телепроектах - 4 роки <br><br><br>
+
+              Освіта: <br>
+              Ягеллонський університет (2017 - 2019) - магістратура. Спеціальність - кінокритика<br><br>
+              Академія моджевського (2014-2017) - бакалаврат. Спеціальність - телевиробництво<br><br>
+              Перша Національна Школа телебачення (2020) - підвищення кваліфікації . Спеціальність -
+              тележурналістика<br><br><br>
+
+              Мови:<br>
+              Англійська - вільно, польська - вільно
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section section-2" id="section-2">
+        <h1 class="heading-h1 heading-h1--orange">Що можу?</h1>
+        <div class="container">
+          <img class="image image-section-2 js-scroll slide-left" src="img/solo-3.jpg" alt="My image" width="960"
+            height="960">
+          <div class="image-text js-scroll slide-right">
+            <p class="text">Історії та люди - мої сильні сторони, якщо йдеться про створення шоу. Добре тямлю в
+              психології
+              та драматургії. Знайома зі всіма етапами створення телепродукції. Вмію налаштовувати учасників на
+              відвертий
+              діалог та вести розмову в потрібне русло. Добре пишу тексти. Стресостійка, креативна. В свою чергу, на
+              роботі
+              для мене важливий постійний розвиток. <br><br>
+              Вмію знаходити в учасниках потрібні для шоу якості,
+              знаходити яскравих персонажів.<br><br>
+              Outside Casting Agency - 2 роки. Моя перша робота в польській кастинг агенції, стала своєрідним
+              провідником
+              в
+              світ кіно і телебачення. Я
+              працювала координатором акторів в масових сценах на знімальних майданчиках. Відповідала за пошук героїв та
+              контактування з ними. Саме там я зрозуміла що робота з внутрішньої сторони екрану - моє
+              покликання.<br><br>
+              24 канал, інформ агенство Українські Новини - практика
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section section-3" id="section-3">
+        <h1 class="heading-h1">Для чого?</h1>
+        <div class="container">
+          <img class="image image-section-3 js-scroll slide-right" src="img/solo-4.jpg" alt="My image" width="960"
+            height="960">
+          <div class="image-text js-scroll slide-left">
+            <p class="text">Щоб розвиватися, вдосконалюватися та працювати!<br><br>
+              Попередня робота:<br> МайстерШеф 11 аматори, МайстерШеф 3 професіонали, МайстерШеф 10 аматори.<br><br>
+              За час роботи на проекті провела близько 3 тисяч інтервю. Більшість моїх героїв доходили до фіналу та
+              навіть
+              ставали переможцями. Я навчилась знаходити в учасниках кастингу потенційних улюбленців телеглядачів.
+              <br><br>
+              Яна Балог, на момент онлайн-кастингу була звичайною дівчиною з Мукачево, а стала переможницею 10 сезону та
+              ученицею найпрестижнішої кулінарної школи Le Cordon Bleu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section section-4" id="section-4">
+        <h1 class="heading-h1 heading-h1--orange">Контакти...</h1>
+
+        <div class="container js-scroll fade-in">
+          <a class="contact-text" href="tel:+380987863830">
+            <img class="img-icon-social" src="/img/icons/phone-24px.svg" alt="Social Icon" />
+            <p class="text text-contact"> 097 664 8412</p>
+          </a>
+
+          <a class="contact-text" href="https://t.me/solomia_lobachuk">
+            <img class="img-icon-social" src="/img/social-icons/telegram-logo.svg" alt="Telegram Icon" />
+            <p class="text text-contact"> @solomia_lobachuk</p>
+          </a>
+
+          <a class="contact-text" href="https://www.facebook.com/salome.maria.98031">
+            <img class="img-icon-social" src="/img/social-icons/facebook-logo.svg" alt="Facebook Icon" />
+            <p class="text text-contact"> facebook.com/salome.maria.98031</p>
+          </a>
+
+          <!-- <div class="contact">
+            <a class="contact-text" href="https://www.instagram.com/x_drive_ski_center">
+              <img class="img-icon-social" src="/img/social-icons/instagram-logo.svg" alt="Instagram Icon" />
+              <h2 class="text text-contact">  Instagram</h2>
+            </a>
+          </div> -->
+
+          <a class="contact-text" href="mailto:solomija.lobachuk@gmail.com">
+            <img class="img-icon-social" src="/img/social-icons/gmail-logo.svg" alt="Gmail Icon" />
+            <p class="text text-contact"> solomija.lobachuk@gmail.com</p>
+          </a>
+        </div>
+
+        <img class="image image-section-4 js-scroll fade-in" src="img/solo-cat_cr.jpg" alt="My image" width="500"
+          height="500">
+
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
