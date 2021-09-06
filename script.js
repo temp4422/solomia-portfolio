@@ -14,7 +14,6 @@ navItems.forEach((item) => {
   item.addEventListener('click', toggleMenu, false)
 })
 
-
 /* 3D effect on hover */
 let el = document.querySelector('.image')
 /* Get the height and width of the element */
@@ -48,7 +47,6 @@ el.addEventListener('mousedown', () => {
 el.addEventListener('mouseup', () => {
   el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
 })
-
 
 /* Animate images on scroll */
 const scrollElements = document.querySelectorAll('.js-scroll')

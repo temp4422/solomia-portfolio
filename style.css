@@ -6,10 +6,12 @@ Marigold #FDAC53, The Hottest Spring/Sommer Colors 2021
 
 Generate palette http://paletton.com/#uid=23R220k7VcJbLlSa8hB5D6X6m3x
 
-import google fonts: "Roboto"
+import google fonts: 'Indie Flower', 'Roboto',
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 /****** BASIC ******/
 :root {
   /* Main Primary color */
@@ -45,8 +47,6 @@ html,
 body {
   font-family: 'Indie Flower', cursive, 'Roboto', sans-serif;
   box-sizing: border-box;
-  /*Jonas Schmedtmann: font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px */
-  /*Jonas Schmedtmann: font-weight: 300; line-height: 1.6;*/
 }
 
 .content {
@@ -57,7 +57,6 @@ body {
   overflow-x: hidden;
   display: grid;
   place-items: center;
-
   grid-template: auto 1fr auto / repeat(auto-fit, minmax(min-content, max-content));
 }
 
@@ -79,12 +78,9 @@ body {
 .header:hover {
   transform: scale(1.1);
   overflow: hidden;
-  /* opacity: 0.8; */
-  /* border-bottom: solid 3px var(--color-primary-orange-0); */
 }
 
 /****** Navigation menu ******/
-
 .nav {
   position: fixed;
   top: 0;
@@ -97,12 +93,10 @@ body {
   transform: translate(-100%, -100%);
   transition: 0.5s;
   z-index: 10;
-  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 100%); */
   clip-path: circle(100% at 0 0);
   background: #000;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* opacity: 0.8; */
 }
 
 .header__dim--active {
@@ -116,9 +110,6 @@ body {
   height: 100%;
   background: #000;
   opacity: 0.7;
-  /* filter: brightness(30%); */
-  /* -webkit-backdrop-filter: blur(10px); */
-  /* backdrop-filter: blur(10px); */
 }
 
 .nav__button {
@@ -161,6 +152,7 @@ body {
 .nav__menu__item:nth-of-type(6) {
   padding: 0.5rem 0.5rem 0.5rem 0vw;
 }
+
 @media (min-width: 768px) {
   li:nth-of-type(2) {
     padding: 1rem 1rem 1.5rem 55vw;
@@ -189,7 +181,6 @@ body {
 }
 
 /****** MAIN ******/
-
 .main {
   margin: auto 0 0 0;
   display: grid;
@@ -262,7 +253,6 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  /* place-items: center; */
   overflow: visible;
 }
 
@@ -273,14 +263,13 @@ body {
   padding: 2rem;
   text-align: center;
   letter-spacing: 0.3rem;
-  /* color: var(--color-primary-grey-3); */
   background-image: linear-gradient(to right, var(--color-primary-grey-3), var(--color-primary-grey-1));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
 .heading-h1--orange {
-  /* color: var(--color-primary-orange-3); */
   background-image: linear-gradient(to right, var(--color-primary-orange-4), var(--color-primary-orange-0));
   -webkit-background-clip: text;
   background-clip: text;
@@ -295,8 +284,6 @@ body {
 .link {
   display: inline-block;
   text-decoration: none;
-  /* color: white; */
-  /* filter: invert(63%) sepia(75%) saturate(405%) hue-rotate(341deg) brightness(104%) contrast(98%); */
 }
 
 .text {
@@ -313,8 +300,6 @@ body {
 }
 .svg-hello {
   margin: 2rem;
-  /* height: 20rem; */
-  /* width: 10rem; */
 }
 .image-text {
   max-width: 40rem;
@@ -423,6 +408,7 @@ svg {
     padding: 2rem 1rem 2rem 0vw;
   }
 }
+
 /****** FOOTER ******/
 .footer {
   visibility: hidden;
@@ -437,6 +423,7 @@ svg {
 .js-scroll.scrolled {
   opacity: 1;
 }
+
 /* Different scroll animation */
 .scrolled.fade-in {
   animation: fade-in 1s ease-in-out both;
