@@ -315,7 +315,7 @@ body {
   max-width: 40rem;
   height: auto;
   border-radius: 5%;
-  transition: 1s;
+  /* transition: 1s; //.js-scroll */
 }
 
 .image:hover {
@@ -419,7 +419,7 @@ svg {
 /* Animate images on scroll */
 .js-scroll {
   opacity: 0;
-  transition: opacity 500ms;
+  transition: 1s;
 }
 
 .js-scroll.scrolled {
