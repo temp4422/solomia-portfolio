@@ -64,6 +64,8 @@ body {
 .header {
   margin: 0.7rem;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 3.6rem;
   height: auto;
   display: grid;
@@ -328,7 +330,7 @@ body {
 }
 @media (min-width: 768px) {
   .image-section-0 {
-    max-width: 35%;
+    max-width: 40rem;
   }
 }
 
